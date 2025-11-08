@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+.container-card { @apply bg-white/80 backdrop-blur-md rounded-2xl p-6 shadow-lg; }
+
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.35; }
+  50% { transform: translateY(-15px) scale(1.05); opacity: 0.5; }
+}
+
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
