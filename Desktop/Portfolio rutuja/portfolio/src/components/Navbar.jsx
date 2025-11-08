@@ -26,6 +26,14 @@ export default function Navbar() {
             Projects
           </NavLink>
           <NavLink
+            to="/experience"
+            className={({ isActive }) =>
+              isActive ? "text-primary font-medium" : "hover:text-primary"
+            }
+          >
+            Experience
+          </NavLink>
+          <NavLink
             to="/contact"
             className={({ isActive }) =>
               isActive ? "text-primary font-medium" : "hover:text-primary"

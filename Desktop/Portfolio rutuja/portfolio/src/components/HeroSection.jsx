@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -13,7 +14,7 @@ export default function HeroSection() {
           Rutuja Kulkarni
         </h1>
         <p className="mt-3 text-lg text-slate-700">
-          Full Stack developer — React, Node, NestJS. I build admin dashboards,
+          Full Stack Developer — React, Node, NestJS. I build admin dashboards,
           secure auth flows and modern UIs.
         </p>
 
@@ -25,9 +26,14 @@ export default function HeroSection() {
           >
             Download CV
           </a>
-          <a href="/projects" className="px-5 py-2 rounded-md border border-gray-400">
+
+          {/* ✅ FIXED — use React Router Link instead of anchor */}
+          <Link
+            to="/projects"
+            className="px-5 py-2 rounded-md border border-gray-400"
+          >
             View projects
-          </a>
+          </Link>
         </div>
 
         <div className="mt-8 grid grid-cols-2 gap-3 text-sm">

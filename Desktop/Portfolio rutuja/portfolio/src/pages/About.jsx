@@ -12,9 +12,12 @@ export default function About() {
       >
         <h2 className="text-2xl font-bold">About</h2>
         <p className="mt-3 text-slate-700">
-          I build scalable web apps with a focus on secure authentication flows,
-          clean UX and maintainable code. My work includes admin dashboards, OTP
-          login systems and modular frontend architectures.
+          I’m an <strong>Experienced Full Stack Developer</strong> with over{" "}
+          <strong>1 year of hands-on experience</strong> in designing and
+          developing responsive, user-friendly, and scalable web applications.
+          My expertise lies in the <strong>MERN stack</strong> and{" "}
+          <strong> backend development</strong>, where I build secure
+          APIs and seamless front-end experiences.
         </p>
 
         <div className="mt-4 grid grid-cols-2 gap-3">
